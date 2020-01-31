@@ -49,13 +49,15 @@
 		http://localhost:8088/api/browser/index.html#/api
 		-->
 		<dependency>
-        <groupId>org.springframework.data</groupId>
-        <artifactId>spring-data-rest-hal-browser</artifactId>
-    </dependency>
-	
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+    	</dependency>
 	<!-- Spring Data REST + Spring Security -->
 	<!-- https://github.com/spring-projects/spring-data-examples/tree/master/rest/security -->
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -68,7 +70,6 @@
 			<scope>runtime</scope>
 		</dependency>
 
-		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -91,6 +92,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

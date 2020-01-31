@@ -23,7 +23,7 @@ public class Emprunt {
         @Column(nullable = true)
         private Date EmpruntDateRetour;
         @Column(nullable = true)
-        private Boolean EmpruntDateProlongation;
+        private Date EmpruntDateProlongation;
 
     public Emprunt() { super(); }
 
@@ -75,11 +75,11 @@ public class Emprunt {
         EmpruntDateRetour = empruntDateRetour;
     }
 
-    public Boolean getEmpruntDateProlongation() {
+    public Date getEmpruntDateProlongation() {
         return EmpruntDateProlongation;
     }
 
-    public void setEmpruntDateProlongation(Boolean empruntDateProlongation) {
+    public void setEmpruntDateProlongation(Date empruntDateProlongation) {
         EmpruntDateProlongation = empruntDateProlongation;
     }
 }
