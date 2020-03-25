@@ -1,4 +1,6 @@
 
+spring-boot-starter-data-rest
+
 <!-- Pour remplacer swagger /hal-browser
 		http://localhost:8088/
 		or
